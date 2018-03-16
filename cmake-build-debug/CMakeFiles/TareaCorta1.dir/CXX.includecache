@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.cpp
+Memory.h
+/Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.h
+iostream
+-
+string
+-
+
+/Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.h
+
+/Users/IsaacPorras/CLionProjects/TareaCorta1/PagedArray/Reader.cpp
+fstream
+-
+iostream
+-
+sys/stat.h
+-
+Reader.h
+/Users/IsaacPorras/CLionProjects/TareaCorta1/PagedArray/Reader.h
+
+/Users/IsaacPorras/CLionProjects/TareaCorta1/PagedArray/Reader.h
+
+/Users/IsaacPorras/CLionProjects/TareaCorta1/main.cpp
+iostream
+-
+PagedArray/Reader.h
+/Users/IsaacPorras/CLionProjects/TareaCorta1/PagedArray/Reader.h
+Memory/Memory.h
+/Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.h
+
