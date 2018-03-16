@@ -12,18 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6114eed-d02f-4ed5-8ffe-0afcf75151f6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change beforePath="$PROJECT_DIR$/Memory/Memory.cpp" afterPath="$PROJECT_DIR$/Memory/Memory.cpp" />
-      <change beforePath="$PROJECT_DIR$/Memory/Memory.h" afterPath="$PROJECT_DIR$/Memory/Memory.h" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TareaCorta1.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TareaCorta1.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TareaCorta1.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TareaCorta1.dir/cmake_clean.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TareaCorta1.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TareaCorta1.dir/link.txt" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TareaCorta1.dir/main.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TareaCorta1" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/archivo.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/archivo.bin" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +40,8 @@
       <file leaf-file-name="Memory.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Memory/Memory.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2190">
-              <caret line="146" column="1" lean-forward="false" selection-start-line="146" selection-start-column="1" selection-end-line="146" selection-end-column="1" />
+            <state relative-caret-position="382">
+              <caret line="92" column="71" lean-forward="false" selection-start-line="92" selection-start-column="71" selection-end-line="92" selection-end-column="71" />
               <folding>
                 <element signature="e#48#67#0" expanded="true" />
               </folding>
@@ -58,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -70,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Memory.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Memory.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Memory/Memory.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
+            <state relative-caret-position="488">
               <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
               <folding />
             </state>
@@ -93,7 +84,7 @@
       <file leaf-file-name="Reader.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PagedArray/Reader.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
+            <state relative-caret-position="548">
               <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
                 <element signature="e#88#107#0" expanded="true" />
@@ -117,12 +108,12 @@
       <list>
         <option value="$PROJECT_DIR$/Files/archivo.dat" />
         <option value="$PROJECT_DIR$/Memory/PagesList.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Files/archivo.bin" />
         <option value="$PROJECT_DIR$/PagedArray/Reader.h" />
         <option value="$PROJECT_DIR$/PagedArray/Reader.cpp" />
-        <option value="$PROJECT_DIR$/Memory/Memory.cpp" />
         <option value="$PROJECT_DIR$/Memory/Memory.h" />
+        <option value="$PROJECT_DIR$/Memory/Memory.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -255,12 +246,12 @@
       <workItem from="1521150815377" duration="1567000" />
       <workItem from="1521152796309" duration="4641000" />
       <workItem from="1521159271394" duration="7942000" />
-      <workItem from="1521174295055" duration="2652000" />
+      <workItem from="1521174295055" duration="3222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41544000" />
+    <option name="totallyTimeSpent" value="42114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -691,31 +682,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Files/archivo.bin">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="3900" lean-forward="false" selection-start-line="0" selection-start-column="3900" selection-end-line="0" selection-end-column="3900" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PagedArray/Reader.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="e#88#107#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,21 +698,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Memory/Memory.cpp">
+    <entry file="file://$PROJECT_DIR$/PagedArray/Reader.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="146" column="1" lean-forward="false" selection-start-line="146" selection-start-column="1" selection-end-line="146" selection-end-column="1" />
+        <state relative-caret-position="548">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
-            <element signature="e#48#67#0" expanded="true" />
+            <element signature="e#88#107#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Memory/Memory.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
+        <state relative-caret-position="488">
           <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Memory/Memory.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="92" column="71" lean-forward="false" selection-start-line="92" selection-start-column="71" selection-end-line="92" selection-end-column="71" />
+          <folding>
+            <element signature="e#48#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

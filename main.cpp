@@ -10,6 +10,7 @@ int main() {
 //    reader.readFile();
     Memory memoria;
     memoria.cargarpagina(100);
+    memoria.cargarpagina(300);
 
     return 0;
 }

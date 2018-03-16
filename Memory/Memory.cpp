@@ -55,18 +55,22 @@ int Memory::getSize(){                                                          
 void Memory::insertarPagina(Pagina *paginainsertar) {                                                                   //Este metodo asigna la pagina que se quiere cargar a las que se tienen
 
     if(pagina1.numerodepagina == -1){
+        std::cout<<"SE INSERTO EN LA PAGINA 1"<<std::endl;
         pagina1 = (*paginainsertar);
         return;
     }
     if(pagina2.numerodepagina == -1){
+        std::cout<<"SE INSERTO EN LA PAGINA 2"<<std::endl;
         pagina2 = (*paginainsertar);
         return;
     }
     if(pagina2.numerodepagina == -1) {
+        std::cout<<"SE INSERTO EN LA PAGINA 3"<<std::endl;
         pagina2 = (*paginainsertar);
         return;
     }
     if(pagina3.numerodepagina == -1){
+        std::cout<<"SE INSERTO EN LA PAGINA 4"<<std::endl;
         pagina3 = (*paginainsertar);
         return;
     }
@@ -76,15 +80,17 @@ void Memory::insertarPagina(Pagina *paginainsertar) {                           
     }
 }
 
-void Memory::cargarpagina(int posicion_numero) {                                                                        //Yo defini las paginas de 100 ints = 400bytes
+void Memory::cargarpagina(int posicion_numero) {
+    //Yo defini las paginas de 100 ints = 400bytes
     std::cout<<"AYUDAAAAAAA: "<<pagina1.numerodepagina <<std::endl;
     string status = "no cargado";                                                                                       //Este status permite saber si la pagina esta cargada o no
     int bytepos = posicion_numero * sizeof(int);                                                                        //Calcula la posicion en bytes de el numero
     int numero_de_pagina = (bytepos / (sizeof(int)*100)) ;                                                              //Calcula la pagina en la que se encuentra el numero
-    std::cout<<"AYUDAAAAAAA: "<<pagina1.numerodepagina <<std::endl;
+    std::cout<<"pagina1: "<<pagina1.numerodepagina <<std::endl;
+    std::cout<<numero_de_pagina<<std::endl;
     std::cout<<"MI NUMERO ESTA POSICIONADO EN LA POSICION: "<< bytepos <<std::endl;
 
-    if(numero_de_pagina == pagina1.numerodepagina||pagina2.numerodepagina                                //Verifica que la pagina no este cargada
+    if(numero_de_pagina == pagina1.numerodepagina||numero_de_pagina == pagina2.numerodepagina                                //Verifica que la pagina no este cargada
        || numero_de_pagina == pagina3.numerodepagina|| numero_de_pagina == pagina4.numerodepagina){
         std::cout<<"YA ESTA CARGADA"<<std::endl;
         status = "cargado";                                                                                             //cambia el status si la pagina esta cargada
