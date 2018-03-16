@@ -81,33 +81,9 @@ CMakeFiles/TareaCorta1.dir/main.cpp.o.provides: CMakeFiles/TareaCorta1.dir/main.
 CMakeFiles/TareaCorta1.dir/main.cpp.o.provides.build: CMakeFiles/TareaCorta1.dir/main.cpp.o
 
 
-CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o: CMakeFiles/TareaCorta1.dir/flags.make
-CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o: ../Memory/Memory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o -c /Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.cpp
-
-CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.cpp > CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.i
-
-CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.cpp -o CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.s
-
-CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.requires:
-
-.PHONY : CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.requires
-
-CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.provides: CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.requires
-	$(MAKE) -f CMakeFiles/TareaCorta1.dir/build.make CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.provides.build
-.PHONY : CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.provides
-
-CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.provides.build: CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o
-
-
 CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o: CMakeFiles/TareaCorta1.dir/flags.make
 CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o: ../PagedArray/Reader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o -c /Users/IsaacPorras/CLionProjects/TareaCorta1/PagedArray/Reader.cpp
 
 CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.i: cmake_force
@@ -129,18 +105,42 @@ CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o.provides: CMakeFiles/TareaCor
 CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o.provides.build: CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o
 
 
+CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o: CMakeFiles/TareaCorta1.dir/flags.make
+CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o: ../Memory/Memory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o -c /Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.cpp
+
+CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.cpp > CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.i
+
+CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.cpp -o CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.s
+
+CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.requires:
+
+.PHONY : CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.requires
+
+CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.provides: CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.requires
+	$(MAKE) -f CMakeFiles/TareaCorta1.dir/build.make CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.provides.build
+.PHONY : CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.provides
+
+CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.provides.build: CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o
+
+
 # Object files for target TareaCorta1
 TareaCorta1_OBJECTS = \
 "CMakeFiles/TareaCorta1.dir/main.cpp.o" \
-"CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o" \
-"CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o"
+"CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o" \
+"CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o"
 
 # External object files for target TareaCorta1
 TareaCorta1_EXTERNAL_OBJECTS =
 
 TareaCorta1: CMakeFiles/TareaCorta1.dir/main.cpp.o
-TareaCorta1: CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o
 TareaCorta1: CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o
+TareaCorta1: CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o
 TareaCorta1: CMakeFiles/TareaCorta1.dir/build.make
 TareaCorta1: CMakeFiles/TareaCorta1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TareaCorta1"
@@ -152,8 +152,8 @@ CMakeFiles/TareaCorta1.dir/build: TareaCorta1
 .PHONY : CMakeFiles/TareaCorta1.dir/build
 
 CMakeFiles/TareaCorta1.dir/requires: CMakeFiles/TareaCorta1.dir/main.cpp.o.requires
-CMakeFiles/TareaCorta1.dir/requires: CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.requires
 CMakeFiles/TareaCorta1.dir/requires: CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o.requires
+CMakeFiles/TareaCorta1.dir/requires: CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o.requires
 
 .PHONY : CMakeFiles/TareaCorta1.dir/requires
 

@@ -15,21 +15,20 @@ using std::string;
   * @title Memory
   * @brief Este archivo maneja todo lo que tiene que ver con la paginacion
   */
-struct Pagina{
-    int posInicio;
-    int posFinal;
-    int elementos[100];
-    int numerodepagina;
 
-};
 
 Memory::Memory() {
-    Pagina provicional;                                                                                                 // Crea una pagina provicional que va a ser la que tienen las paginas incializadas por defecto
-    provicional.numerodepagina = -1;                                                                                    //Le asigna un numero de pagina que despues va a servir para saber si no se ha insertado la pagina
-    this->pag1 = &provicional;                                                                                          //Crea la pagina 1
-    this->pag2 = &provicional;                                                                                          //Crea la pagina 2
-    this->pag3 = &provicional;                                                                                          //Crea la pagina 3
-    this->pag4 = &provicional;                                                                                          //Crea la pagina 4
+    struct Pagina pagina1;
+    pagina1.numerodepagina = -1;
+    struct Pagina pagina2;
+    pagina2.numerodepagina = -1;
+    struct Pagina pagina3;
+    pagina3.numerodepagina = -1;
+    struct Pagina pagina4;
+    pagina4.numerodepagina = -1;
+
+    //Le asigna un numero de pagina que despues va a servir para saber si no se ha insertado la pagina
+
 
 }
 
@@ -55,20 +54,20 @@ int Memory::getSize(){                                                          
 
 void Memory::insertarPagina(Pagina *paginainsertar) {                                                                   //Este metodo asigna la pagina que se quiere cargar a las que se tienen
 
-    if(pag1 == nullptr){
-        pag1 = paginainsertar;
+    if(pagina1.numerodepagina == -1){
+        pagina1 = (*paginainsertar);
         return;
     }
-    if(pag2== nullptr){
-        pag2 = paginainsertar;
+    if(pagina2.numerodepagina == -1){
+        pagina2 = (*paginainsertar);
         return;
     }
-    if(pag3== nullptr) {
-        pag3 = paginainsertar;
+    if(pagina2.numerodepagina == -1) {
+        pagina2 = (*paginainsertar);
         return;
     }
-    if(pag4== nullptr){
-        pag4 = paginainsertar;
+    if(pagina3.numerodepagina == -1){
+        pagina3 = (*paginainsertar);
         return;
     }
     else{
@@ -78,21 +77,21 @@ void Memory::insertarPagina(Pagina *paginainsertar) {                           
 }
 
 void Memory::cargarpagina(int posicion_numero) {                                                                        //Yo defini las paginas de 100 ints = 400bytes
-
+    std::cout<<"AYUDAAAAAAA: "<<pagina1.numerodepagina <<std::endl;
     string status = "no cargado";                                                                                       //Este status permite saber si la pagina esta cargada o no
     int bytepos = posicion_numero * sizeof(int);                                                                        //Calcula la posicion en bytes de el numero
     int numero_de_pagina = (bytepos / (sizeof(int)*100)) ;                                                              //Calcula la pagina en la que se encuentra el numero
-
+    std::cout<<"AYUDAAAAAAA: "<<pagina1.numerodepagina <<std::endl;
     std::cout<<"MI NUMERO ESTA POSICIONADO EN LA POSICION: "<< bytepos <<std::endl;
 
-    if(numero_de_pagina == pag1->numerodepagina || numero_de_pagina == pag2->numerodepagina                                //Verifica que la pagina no este cargada
-       || numero_de_pagina == pag3->numerodepagina|| numero_de_pagina == pag4->numerodepagina){
+    if(numero_de_pagina == pagina1.numerodepagina||pagina2.numerodepagina                                //Verifica que la pagina no este cargada
+       || numero_de_pagina == pagina3.numerodepagina|| numero_de_pagina == pagina4.numerodepagina){
         std::cout<<"YA ESTA CARGADA"<<std::endl;
         status = "cargado";                                                                                             //cambia el status si la pagina esta cargada
         return;
     }
 
-
+    std::cout<<"AYUDAAAAAAA: "<<pagina1.numerodepagina <<std::endl;
 
     if(status == "no cargado"){                                                                                         //Si la pagina no esta normal
         std::cout<<"MI DATO NO ESTA CARGADO" <<std::endl;
@@ -107,7 +106,7 @@ void Memory::cargarpagina(int posicion_numero) {                                
             fseek(file, 0, SEEK_SET);
         }
         if(numero_de_pagina!= 1){                                                                                       //Si el elemento no es la primera multiplica la pagina por la cantidad de bytes que tiene cada pagina
-                                                                                                                        //...y de esta manera posiciona el lector del archivo donde va a empezar leer la pagina
+            //...y de esta manera posiciona el lector del archivo donde va a empezar leer la pagina
             fseek(file, numero_de_pagina * 400, SEEK_SET);
         }
 
@@ -119,21 +118,28 @@ void Memory::cargarpagina(int posicion_numero) {                                
 
         pagina1.posInicio = numero_de_pagina * 400;                                                                     //Le asigna la posicion inicial de la pagina
 
-        pagina1.posFinal = numero_de_pagina * 400 + 400;                                                                //Le asigna la posicion final de la pagina
+        pagina1.posFinal = numero_de_pagina * 400 + 400;
+
+
+        //Le asigna la posicion final de la pagina
 
         int number;
         std::cout<<"ESTOS SON LOS ELEMENTOS DE MI PAGINA: "<<numero_de_pagina<<std::endl;
         std::cout<<"-----------------------------------------------------------------"<<std::endl;
         int contador = 0;
+
         while(fread(&number, sizeof(int),1,file) && contador != 101 ){                                                  //Aca lee el archivo y le mete los numeros al array que tiene la pagina
 
             pagina1.elementos[posicion] = number;                                                                       //Aca mete los numeros al array
             posicion = posicion + 1;                                                                                    //Aumenta la posicion
-            std::cout<<number<<" , "<<contador<<std::endl;
+            std::cout<<number<<" , "<<contador<<", "<<pagina1.numerodepagina<<std::endl;
             contador = contador +1;
         }
+        std::cout<<"aca se cae el programa " <<std::endl;
+        std::cout<<"AYUDAAAAAAA: "<<pagina1.numerodepagina <<std::endl;
         std::cout<<"HAY "<<contador << " elementos en esta pagina" <<std::endl;
         std::cout<<"-----------------------------------------------------------------"<<std::endl;
+        std::cout<<"AYUDAAAAAAA: "<<pagina1.numerodepagina <<std::endl;
         insertarPagina(&pagina1);                                                                                       //Inserta la pagina creada en los memoria
 
     }
