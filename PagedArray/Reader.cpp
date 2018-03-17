@@ -14,6 +14,7 @@ Reader::Reader() {
 }
 
 void Reader::writeFile() {
+
     Path = "archivo.bin";                                                                                               // Es el path al archivo
     ofstream file (Path, ios::out |ios::binary);                                                                        //Crea el archivo en binario
 
@@ -54,7 +55,7 @@ void Reader::readFile() {                                                       
     FILE *file;                                                                                                         //crea una variable de tipo File
     int number;
     file = fopen("archivo.bin","rb");                                                                                   //Abre el archivo
-    if(file==NULL){
+    if(file == NULL){
        std::cout<<"no se abrio"<< std::endl;
     }
     else{

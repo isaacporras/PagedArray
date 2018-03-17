@@ -6,7 +6,7 @@
 int main() {
     Reader reader;
     reader.writeFile();
-    reader.getSize();
+//    reader.getSize();
 //    reader.readFile();
     Memory memoria;
     memoria.cargarpagina(100);
