@@ -52,6 +52,7 @@ int Memory::getSize(){                                                          
 
 Pagina Memory::insertarPagina(Pagina *paginainsertar) {                                                                   //Este metodo asigna la pagina que se quiere cargar a las que se tienen
     std::cout<<"****************************  VA A INSERTAR ***********************"<<std::endl;
+    std::cout<<"****************************  "<<*paginainsertar->numerodepagina<<" ***********************"<<std::endl;
     if(*pagina1.numerodepagina == -1){
 
         std::cout<<"SE INSERTO EN LA PAGINA 1 Y TIENE A PAGINA " << *paginainsertar->numerodepagina<<std::endl;
@@ -59,11 +60,11 @@ Pagina Memory::insertarPagina(Pagina *paginainsertar) {                         
         pagina1.numerodepagina = paginainsertar->numerodepagina;
 
 
-        for(int x=0; x < 101; ++x){
+        for(int x = 0; x < 101; ++x){
             pagina1.elementos[x] = paginainsertar->elementos[x];
         }
 
-        todaslaspaginas[1] = pagina1;
+        todaslaspaginas[0] = pagina1;
 
         pagina1.lasttimeused += 1;
 
@@ -74,33 +75,36 @@ Pagina Memory::insertarPagina(Pagina *paginainsertar) {                         
         pagina2.numerodepagina = paginainsertar->numerodepagina;
         std::cout<<"SE INSERTO EN LA PAGINA 2 :"<< *paginainsertar->numerodepagina<<std::endl;
 
-        todaslaspaginas[2] = pagina2;
-        pagina2.lasttimeused +=1;
+
+        pagina2.lasttimeused += 1;
         for(int x= 0; x < 101; ++x){
             pagina2.elementos[x] = paginainsertar->elementos[x];
         }
+        todaslaspaginas[1] = pagina2;
         return pagina2;
     }
     if(*pagina3.numerodepagina == -1) {
         pagina3.numerodepagina = paginainsertar->numerodepagina;
         std::cout<<"SE INSERTO EN LA PAGINA 3 :"<< *paginainsertar->numerodepagina<<std::endl;
 
-        todaslaspaginas[3] = pagina3;
+
         pagina3.lasttimeused +=1;
         for(int x=0; x < 101; ++x){
             pagina3.elementos[x] = paginainsertar->elementos[x];
         }
+        todaslaspaginas[2] = pagina3;
         return pagina3;
     }
     if(*pagina4.numerodepagina == -1){
         pagina4.numerodepagina = paginainsertar->numerodepagina;
         std::cout<<"SE INSERTO EN LA PAGINA 4 : "<< *paginainsertar->numerodepagina<<std::endl;
 
-        todaslaspaginas[4] = pagina4;
+
         pagina4.lasttimeused +=1;
         for(int x = 0 ; x < 101; ++x){
             pagina4.elementos[x] = paginainsertar->elementos[x];
         }
+        todaslaspaginas[3] = pagina4;
         return pagina4;
     }
         //ACA APLICA EL CRITERIO DE LA MENOS USADA PARA AREMPLAZAR
@@ -113,7 +117,7 @@ Pagina Memory::insertarPagina(Pagina *paginainsertar) {                         
             for(int x=0; x < 101; ++x){
                 pagina1.elementos[x] = paginainsertar->elementos[x];
             }
-            todaslaspaginas[1] = pagina1;
+            todaslaspaginas[0] = pagina1;
             return pagina1;
         }
         if(pagina2.lasttimeused>= pagina1.lasttimeused && pagina2.lasttimeused>= pagina3.lasttimeused
@@ -123,7 +127,7 @@ Pagina Memory::insertarPagina(Pagina *paginainsertar) {                         
             for(int x=0; x < 101; ++x){
                 pagina2.elementos[x] = paginainsertar->elementos[x];
             }
-            todaslaspaginas[2] = pagina2;
+            todaslaspaginas[1] = pagina2;
             return pagina2;
         }
         if(pagina3.lasttimeused>= pagina1.lasttimeused && pagina3.lasttimeused>= pagina2.lasttimeused
@@ -134,7 +138,7 @@ Pagina Memory::insertarPagina(Pagina *paginainsertar) {                         
             for(int x=0; x < 101; ++x){
                 pagina3.elementos[x] = paginainsertar->elementos[x];
             }
-            todaslaspaginas[3] = pagina3;
+            todaslaspaginas[2] = pagina3;
             return pagina3;
         }
         if(pagina4.lasttimeused>= pagina1.lasttimeused && pagina4.lasttimeused>= pagina2.lasttimeused
@@ -145,7 +149,7 @@ Pagina Memory::insertarPagina(Pagina *paginainsertar) {                         
                 pagina4.elementos[x] = paginainsertar->elementos[x];
             }
             pagina4 = (*paginainsertar);
-            todaslaspaginas[4] = pagina4;
+            todaslaspaginas[3] = pagina4;
 
             return pagina4;
         }
