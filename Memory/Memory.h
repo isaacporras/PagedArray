@@ -43,7 +43,7 @@ public:
      * @brief este metodo busca la posicion del numero que se busca y retorna la pagina completa en la que se encuentra
      * @param posicion_numero la posicion del numero que se busca
      */
-    Pagina cargarpagina(int posicion_numero);
+    Pagina* cargarpagina(int posicion_numero);
     /**
      * @brief este metodo retorna el tamano del archivo que se esta leyendo, en este caso es archivo.bin
      * @return tamano en bytes del archivo
@@ -53,7 +53,7 @@ public:
      * @brief este metodo inserta la pagina entera(que se busca en el metodo cargarpagina) en los arrays de la memoria.
      * @param paginainsertar
      */
-    Pagina insertarPagina(struct Pagina *paginainsertar);
+    Pagina* insertarPagina(struct Pagina *paginainsertar);
 
     int& operator[](int index);
 

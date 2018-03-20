@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/karina/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /home/karina/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/IsaacPorras/CLionProjects/TareaCorta1
+CMAKE_SOURCE_DIR = "/home/karina/Documentos/tarea 3"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/karina/Documentos/tarea 3/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debu
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/karina/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/karina/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug/CMakeFiles /Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/karina/Documentos/tarea 3/cmake-build-debug/CMakeFiles" "/home/karina/Documentos/tarea 3/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/karina/Documentos/tarea 3/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ Memory/Memory.cpp.s:
 	$(MAKE) -f CMakeFiles/TareaCorta1.dir/build.make CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.s
 .PHONY : Memory/Memory.cpp.s
 
+PagedArray/PagedArray.o: PagedArray/PagedArray.cpp.o
+
+.PHONY : PagedArray/PagedArray.o
+
+# target to build an object file
+PagedArray/PagedArray.cpp.o:
+	$(MAKE) -f CMakeFiles/TareaCorta1.dir/build.make CMakeFiles/TareaCorta1.dir/PagedArray/PagedArray.cpp.o
+.PHONY : PagedArray/PagedArray.cpp.o
+
+PagedArray/PagedArray.i: PagedArray/PagedArray.cpp.i
+
+.PHONY : PagedArray/PagedArray.i
+
+# target to preprocess a source file
+PagedArray/PagedArray.cpp.i:
+	$(MAKE) -f CMakeFiles/TareaCorta1.dir/build.make CMakeFiles/TareaCorta1.dir/PagedArray/PagedArray.cpp.i
+.PHONY : PagedArray/PagedArray.cpp.i
+
+PagedArray/PagedArray.s: PagedArray/PagedArray.cpp.s
+
+.PHONY : PagedArray/PagedArray.s
+
+# target to generate assembly for a file
+PagedArray/PagedArray.cpp.s:
+	$(MAKE) -f CMakeFiles/TareaCorta1.dir/build.make CMakeFiles/TareaCorta1.dir/PagedArray/PagedArray.cpp.s
+.PHONY : PagedArray/PagedArray.cpp.s
+
 PagedArray/Reader.o: PagedArray/Reader.cpp.o
 
 .PHONY : PagedArray/Reader.o
@@ -216,6 +243,9 @@ help:
 	@echo "... Memory/Memory.o"
 	@echo "... Memory/Memory.i"
 	@echo "... Memory/Memory.s"
+	@echo "... PagedArray/PagedArray.o"
+	@echo "... PagedArray/PagedArray.i"
+	@echo "... PagedArray/PagedArray.s"
 	@echo "... PagedArray/Reader.o"
 	@echo "... PagedArray/Reader.i"
 	@echo "... PagedArray/Reader.s"

@@ -6,19 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.cpp
+/home/karina/Documentos/tarea 3/Memory/Memory.cpp
 Memory.h
-/Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.h
+/home/karina/Documentos/tarea 3/Memory/Memory.h
 iostream
 -
 string
 -
 
-/Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.h
+/home/karina/Documentos/tarea 3/Memory/Memory.h
 iostream
 -
 
-/Users/IsaacPorras/CLionProjects/TareaCorta1/PagedArray/Reader.cpp
+/home/karina/Documentos/tarea 3/PagedArray/PagedArray.cpp
+PagedArray.h
+/home/karina/Documentos/tarea 3/PagedArray/PagedArray.h
+cmath
+-
+iostream
+-
+PagedArray.h
+/home/karina/Documentos/tarea 3/PagedArray/PagedArray.h
+Reader.h
+/home/karina/Documentos/tarea 3/PagedArray/Reader.h
+
+/home/karina/Documentos/tarea 3/PagedArray/PagedArray.h
+../Memory/Memory.h
+/home/karina/Documentos/tarea 3/Memory/Memory.h
+iostream
+-
+string
+-
+
+/home/karina/Documentos/tarea 3/PagedArray/Reader.cpp
 fstream
 -
 iostream
@@ -26,15 +46,17 @@ iostream
 sys/stat.h
 -
 Reader.h
-/Users/IsaacPorras/CLionProjects/TareaCorta1/PagedArray/Reader.h
+/home/karina/Documentos/tarea 3/PagedArray/Reader.h
 
-/Users/IsaacPorras/CLionProjects/TareaCorta1/PagedArray/Reader.h
+/home/karina/Documentos/tarea 3/PagedArray/Reader.h
 
-/Users/IsaacPorras/CLionProjects/TareaCorta1/main.cpp
+/home/karina/Documentos/tarea 3/main.cpp
 iostream
 -
 PagedArray/Reader.h
-/Users/IsaacPorras/CLionProjects/TareaCorta1/PagedArray/Reader.h
+/home/karina/Documentos/tarea 3/PagedArray/Reader.h
 Memory/Memory.h
-/Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.h
+/home/karina/Documentos/tarea 3/Memory/Memory.h
+PagedArray/PagedArray.h
+/home/karina/Documentos/tarea 3/PagedArray/PagedArray.h
 

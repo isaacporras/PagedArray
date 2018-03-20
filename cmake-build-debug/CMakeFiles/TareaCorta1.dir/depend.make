@@ -4,10 +4,16 @@
 CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o: ../Memory/Memory.cpp
 CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o: ../Memory/Memory.h
 
+CMakeFiles/TareaCorta1.dir/PagedArray/PagedArray.cpp.o: ../Memory/Memory.h
+CMakeFiles/TareaCorta1.dir/PagedArray/PagedArray.cpp.o: ../PagedArray/PagedArray.cpp
+CMakeFiles/TareaCorta1.dir/PagedArray/PagedArray.cpp.o: ../PagedArray/PagedArray.h
+CMakeFiles/TareaCorta1.dir/PagedArray/PagedArray.cpp.o: ../PagedArray/Reader.h
+
 CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o: ../PagedArray/Reader.cpp
 CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o: ../PagedArray/Reader.h
 
 CMakeFiles/TareaCorta1.dir/main.cpp.o: ../Memory/Memory.h
+CMakeFiles/TareaCorta1.dir/main.cpp.o: ../PagedArray/PagedArray.h
 CMakeFiles/TareaCorta1.dir/main.cpp.o: ../PagedArray/Reader.h
 CMakeFiles/TareaCorta1.dir/main.cpp.o: ../main.cpp
 

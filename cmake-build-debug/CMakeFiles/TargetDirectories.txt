@@ -1,3 +1,3 @@
-/Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug/CMakeFiles/TareaCorta1.dir
+/home/karina/Documentos/tarea 3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/karina/Documentos/tarea 3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/karina/Documentos/tarea 3/cmake-build-debug/CMakeFiles/TareaCorta1.dir

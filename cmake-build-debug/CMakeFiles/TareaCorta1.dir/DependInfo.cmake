@@ -4,11 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/IsaacPorras/CLionProjects/TareaCorta1/Memory/Memory.cpp" "/Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug/CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o"
-  "/Users/IsaacPorras/CLionProjects/TareaCorta1/PagedArray/Reader.cpp" "/Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug/CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o"
-  "/Users/IsaacPorras/CLionProjects/TareaCorta1/main.cpp" "/Users/IsaacPorras/CLionProjects/TareaCorta1/cmake-build-debug/CMakeFiles/TareaCorta1.dir/main.cpp.o"
+  "/home/karina/Documentos/tarea 3/Memory/Memory.cpp" "/home/karina/Documentos/tarea 3/cmake-build-debug/CMakeFiles/TareaCorta1.dir/Memory/Memory.cpp.o"
+  "/home/karina/Documentos/tarea 3/PagedArray/PagedArray.cpp" "/home/karina/Documentos/tarea 3/cmake-build-debug/CMakeFiles/TareaCorta1.dir/PagedArray/PagedArray.cpp.o"
+  "/home/karina/Documentos/tarea 3/PagedArray/Reader.cpp" "/home/karina/Documentos/tarea 3/cmake-build-debug/CMakeFiles/TareaCorta1.dir/PagedArray/Reader.cpp.o"
+  "/home/karina/Documentos/tarea 3/main.cpp" "/home/karina/Documentos/tarea 3/cmake-build-debug/CMakeFiles/TareaCorta1.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

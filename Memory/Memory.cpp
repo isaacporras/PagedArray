@@ -50,7 +50,7 @@ int Memory::getSize(){                                                          
 
 }
 
-Pagina Memory::insertarPagina(Pagina *paginainsertar) {                                                                   //Este metodo asigna la pagina que se quiere cargar a las que se tienen
+Pagina* Memory::insertarPagina(Pagina *paginainsertar) {                                                                   //Este metodo asigna la pagina que se quiere cargar a las que se tienen
     std::cout<<"****************************  VA A INSERTAR ***********************"<<std::endl;
     std::cout<<"****************************  "<<*paginainsertar->numerodepagina<<" ***********************"<<std::endl;
     if(*pagina1.numerodepagina == -1){
@@ -68,7 +68,7 @@ Pagina Memory::insertarPagina(Pagina *paginainsertar) {                         
 
         pagina1.lasttimeused += 1;
 
-        return pagina1;
+        return &pagina1;
     }
     if(*pagina2.numerodepagina == -1){
 
@@ -81,7 +81,7 @@ Pagina Memory::insertarPagina(Pagina *paginainsertar) {                         
             pagina2.elementos[x] = paginainsertar->elementos[x];
         }
         todaslaspaginas[1] = pagina2;
-        return pagina2;
+        return &pagina2;
     }
     if(*pagina3.numerodepagina == -1) {
         pagina3.numerodepagina = paginainsertar->numerodepagina;
@@ -93,7 +93,7 @@ Pagina Memory::insertarPagina(Pagina *paginainsertar) {                         
             pagina3.elementos[x] = paginainsertar->elementos[x];
         }
         todaslaspaginas[2] = pagina3;
-        return pagina3;
+        return &pagina3;
     }
     if(*pagina4.numerodepagina == -1){
         pagina4.numerodepagina = paginainsertar->numerodepagina;
@@ -105,7 +105,7 @@ Pagina Memory::insertarPagina(Pagina *paginainsertar) {                         
             pagina4.elementos[x] = paginainsertar->elementos[x];
         }
         todaslaspaginas[3] = pagina4;
-        return pagina4;
+        return &pagina4;
     }
         //ACA APLICA EL CRITERIO DE LA MENOS USADA PARA AREMPLAZAR
     else{
@@ -118,7 +118,7 @@ Pagina Memory::insertarPagina(Pagina *paginainsertar) {                         
                 pagina1.elementos[x] = paginainsertar->elementos[x];
             }
             todaslaspaginas[0] = pagina1;
-            return pagina1;
+            return &pagina1;
         }
         if(pagina2.lasttimeused>= pagina1.lasttimeused && pagina2.lasttimeused>= pagina3.lasttimeused
            && pagina2.lasttimeused>= pagina4.lasttimeused){
@@ -128,7 +128,7 @@ Pagina Memory::insertarPagina(Pagina *paginainsertar) {                         
                 pagina2.elementos[x] = paginainsertar->elementos[x];
             }
             todaslaspaginas[1] = pagina2;
-            return pagina2;
+            return &pagina2;
         }
         if(pagina3.lasttimeused>= pagina1.lasttimeused && pagina3.lasttimeused>= pagina2.lasttimeused
            && pagina3.lasttimeused>= pagina4.lasttimeused){
@@ -139,7 +139,7 @@ Pagina Memory::insertarPagina(Pagina *paginainsertar) {                         
                 pagina3.elementos[x] = paginainsertar->elementos[x];
             }
             todaslaspaginas[2] = pagina3;
-            return pagina3;
+            return &pagina3;
         }
         if(pagina4.lasttimeused>= pagina1.lasttimeused && pagina4.lasttimeused>= pagina2.lasttimeused
            && pagina4.lasttimeused>= pagina3.lasttimeused){
@@ -151,13 +151,13 @@ Pagina Memory::insertarPagina(Pagina *paginainsertar) {                         
             pagina4 = (*paginainsertar);
             todaslaspaginas[3] = pagina4;
 
-            return pagina4;
+            return &pagina4;
         }
 
     }
 }
 
-Pagina Memory::cargarpagina(int posicion_numero) {                                                                        //Yo defini las paginas de 100 ints = 400bytes
+Pagina* Memory::cargarpagina(int posicion_numero) {                                                                        //Yo defini las paginas de 100 ints = 400bytes
     std::cout << "el dato mio es: "<< posicion_numero<< std::endl;
     string status = "no cargado";                                                                                       //Este status permite saber si la pagina esta cargada o no
     int bytepos = posicion_numero * sizeof(int);
@@ -183,10 +183,10 @@ Pagina Memory::cargarpagina(int posicion_numero) {                              
         std::cout << "retorno la pagina 1 de golpe" << std::endl;
         pagina1.lasttimeused += 1;
         for (int contador = 0; contador< 101; ++contador){
-            std::cout<< pagina1.elementos[contador]<<std::endl;
+            //std::cout<< pagina1.elementos[contador]<<std::endl;
         }
 
-        return pagina1;
+        return &pagina1;
     }
 
     if(numero_de_pagina == *pagina2.numerodepagina){
@@ -194,27 +194,27 @@ Pagina Memory::cargarpagina(int posicion_numero) {                              
         std::cout << "retorno la pagina 2 de golpe" << std::endl;
         pagina2.lasttimeused +=1;
         for (int contador = 0; contador< 101; ++contador){
-            std::cout<< pagina2.elementos[contador]<<std::endl;
+            //std::cout<< pagina2.elementos[contador]<<std::endl;
         }
-        return pagina2;
+        return &pagina2;
     }
     if( numero_de_pagina == *pagina3.numerodepagina ){
         std::cout << "Esta en memoria la pagina :" << *pagina3.numerodepagina << std::endl;
         std::cout << "retorno la pagina 3 de golpe" << std::endl;
         pagina3.lasttimeused +=1;
         for (int contador = 0; contador< 101; ++contador){
-            std::cout<< pagina3.elementos[contador]<<std::endl;
+            //std::cout<< pagina3.elementos[contador]<<std::endl;
         }
-        return pagina3;
+        return &pagina3;
     }
     if(numero_de_pagina == *pagina4.numerodepagina){
         std::cout << "Esta en memoria la pagina :" << *pagina4.numerodepagina << std::endl;
         std::cout << "retorno la pagina 4 de golpe" << std::endl;
         pagina4.lasttimeused +=1;
         for (int contador = 0; contador< 101; ++contador){
-            std::cout<< pagina4.elementos[contador]<<std::endl;
+            //std::cout<< pagina4.elementos[contador]<<std::endl;
         }
-        return pagina4;
+        return &pagina4;
     }
 
 
