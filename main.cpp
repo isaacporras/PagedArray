@@ -9,8 +9,11 @@ int main() {
 //    reader.getSize();
 //    reader.readFile();
     Memory memoria;
-    memoria.cargarpagina(100);
-    memoria.cargarpagina(300);
+    memoria.cargarpagina(1);
+    memoria.cargarpagina(10);
+    memoria.cargarpagina(250);
+    memoria.cargarpagina(251);
+//    memoria.cargarpagina(401);
 
     return 0;
 }

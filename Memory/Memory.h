@@ -4,6 +4,7 @@
 
 #ifndef TAREACORTA1_MEMORY_H
 #define TAREACORTA1_MEMORY_H
+#include <iostream>
 /**
   *@file Memory.h
   * @version 1.0
@@ -17,7 +18,8 @@ struct Pagina{
     int posInicio = -1;
     int posFinal = -1;
     int elementos[100];
-    int numerodepagina = -1;
+    int *numerodepagina = (int*)malloc(sizeof(int));
+
 };
 
 /**
