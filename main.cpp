@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 #include "PagedArray/Reader.h"
 #include "Memory/Memory.h"
 #include "PagedArray/PagedArray.h"
@@ -15,73 +14,67 @@ int main() {
     std::cout << "----Prueba 3 regresa: " << array[100] << std::endl;//1
     std::cout << "----Prueba 4 regresa: " << array[199] << std::endl;//1
     std::cout << "----Prueba 5 regresa: " << array[200] << std::endl;//3*/
-    int num = array[1];
-    std::cout << "array[]: " << num << std::endl;
+    //int num = array[1];
+    //std::cout << "array[]: " << num << std::endl;
     //array.printTodasLasPaginas();
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
 //    num = 18;
 //    std::cout << "array[]: " << num << std::endl;
 //    array.printTodasLasPaginas();
 
-
-    cout<<"----------------------Type QS for QuickSort----------------------"<<endl;
-    cout<<"----------------------Type IS for QuickSort----------------------"<<endl;
-    cout<<"----------------------Type SS for QuickSort----------------------"<<endl;
+    //std::cout<< "EL TAMANO DE MI ARCHIVO ES :" << *memoria.getSize() << " bytes" <<std::endl;
 
 
-    long length = array.getSize()/ sizeof(int);
-    cout<<"LENGTH: "<<length<<endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "" << endl;
+    cout << "-----------------------------WELCOME---------------------------------" << endl;
+    cout << "----------------PLEASE CHOOSE ANY SORTING ALGORITHM------------------" << endl;
+    cout << "-------------------------Type QS for QuickSort-----------------------" << endl;
+    cout << "----------------------Type SS for SelectionSort----------------------" << endl;
+    cout << "----------------------Type IS for InsertionSort----------------------" << endl;
 
 
-    cout<<"HERE2"<<endl;
-    cout<<"HERE2"<<endl;
-    cout<<"HERE2"<<endl;
-    cout<<"HERE2"<<endl;
-    cout<<"HERE2"<<endl;
-    cout<<"HERE2"<<endl;
-    cout<<"HERE2"<<endl;
-    cout<<"HERE2"<<endl;
-    cout<<"HERE2"<<endl;
-    cout<<"HERE2"<<endl;
-    cout<<"HERE2"<<endl;
-    cout<<"HERE2"<<endl;
-    cout<<"HERE2"<<endl;
-    cout<<"HERE2"<<endl;
-    Sorting::quickSort(&array, 0, (int)(length-1));
-    cout<<"HERE3"<<endl;
-    cout<<"HERE3"<<endl;
-    cout<<"HERE3"<<endl;
-    cout<<"HERE3"<<endl;
-    cout<<"HERE3"<<endl;
-    cout<<"HERE3"<<endl;
-    cout<<"HERE3"<<endl;
-    cout<<"HERE3"<<endl;
-    cout<<"HERE3"<<endl;
-    cout<<"HERE3"<<endl;
-    array.printTodasLasPaginas();
-//    string input {""};
-//    cin>>input;
-//    if(input == "QS") { Sorting::quickSort(&array, 0,(int)(length - 1));};
-//    if(input == "IS") { Sorting::quickSort(&array, (int)length);};
-//    if(input == "SS") { Sorting::quickSort(&array, (int)length);};
+    int *length = array.getSize();
+//    cout << "LENGTH: " << *length << endl;
+    int fl = *length / 4;
 
+    string input;
+    cin >> input;
+    if (input == "QS") {
+        Sorting::quickSort(&array, 0, fl - 1);
+        array.printTodasLasPaginas();
+    } else if (input == "IS") {
+        Sorting::insertionSort(&array, fl);
+        array.printTodasLasPaginas();
+    } else if (input == "SS") {
+        Sorting::selectionSort(&array, fl);
+        array.printTodasLasPaginas();
+    } else {
+        cout << "input not valid, type QS, IS, SS" << endl;
+    }
 
 
     return 0;
-
-
 }

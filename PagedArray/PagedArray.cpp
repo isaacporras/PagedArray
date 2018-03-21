@@ -20,7 +20,7 @@ int& PagedArray::operator[](int index) {
     int requestedPageNumber = (int) ceil(index/100) + 1;
     struct Pagina* requestedPage = virtualMemory.cargarpagina(index);
 
-    std::cout << "el indice que voy a pedir: " << requestedIndex << " de la pagina: " << requestedPageNumber <<std::endl;
+    //std::cout << "el indice que voy a pedir: " << requestedIndex << " de la pagina: " << requestedPageNumber <<std::endl;
 
 
     for(int i = 0; i < 4; ++i){
@@ -37,7 +37,7 @@ int& PagedArray::operator[](int index) {
 /*
  * PARA TENER EL TAMANO EN BYTES DEL ARRAY Y ASI PODER USARLO EN QUICKSORT COMO LEFT
  */
-long PagedArray::getSize(){
+int *PagedArray::getSize() {
     return virtualMemory.getSize();
 }
 
