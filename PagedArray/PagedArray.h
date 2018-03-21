@@ -18,7 +18,8 @@ public:
     PagedArray();
     int& operator[](int);
     void printTodasLasPaginas();
-    long getSize();
+
+    int *getSize();
 };
 
 

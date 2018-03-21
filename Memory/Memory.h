@@ -48,7 +48,7 @@ public:
      * @brief este metodo retorna el tamano del archivo que se esta leyendo, en este caso es archivo.bin
      * @return tamano en bytes del archivo
      */
-    int getSize();
+    int *getSize();
     /**
      * @brief este metodo inserta la pagina entera(que se busca en el metodo cargarpagina) en los arrays de la memoria.
      * @param paginainsertar
