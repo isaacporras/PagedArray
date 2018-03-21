@@ -38,10 +38,7 @@ int& PagedArray::operator[](int index) {
  * PARA TENER EL TAMANO EN BYTES DEL ARRAY Y ASI PODER USARLO EN QUICKSORT COMO LEFT
  */
 long PagedArray::getSize(){
-    Reader reader;
-    reader.readFile();
-    long size = reader.getSize();
-    return size;
+    return virtualMemory.getSize();
 }
 
 

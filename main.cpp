@@ -44,7 +44,7 @@ int main() {
 
 
     long length = array.getSize()/ sizeof(int);
-    cout<<length<<endl;
+    cout<<"LENGTH: "<<length<<endl;
 
 
     cout<<"HERE2"<<endl;
@@ -62,21 +62,16 @@ int main() {
     cout<<"HERE2"<<endl;
     cout<<"HERE2"<<endl;
     Sorting::quickSort(&array, 0, (int)(length-1));
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
-    cout<<"HERE"<<endl;
+    cout<<"HERE3"<<endl;
+    cout<<"HERE3"<<endl;
+    cout<<"HERE3"<<endl;
+    cout<<"HERE3"<<endl;
+    cout<<"HERE3"<<endl;
+    cout<<"HERE3"<<endl;
+    cout<<"HERE3"<<endl;
+    cout<<"HERE3"<<endl;
+    cout<<"HERE3"<<endl;
+    cout<<"HERE3"<<endl;
     array.printTodasLasPaginas();
 //    string input {""};
 //    cin>>input;
