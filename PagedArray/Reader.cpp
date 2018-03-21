@@ -39,13 +39,15 @@ void Reader::writeFile() {
 
 }
 
-void Reader::getSize() {                                                                                                //Metodo que retorna el tamano en bytes del archivo
+long Reader::getSize() {                                                                                                //Metodo que retorna el tamano en bytes del archivo
     struct stat results;
-    if (stat("archivo.bin", &results) == 0)
+    if (stat("archivo.bin", &results) == 0){
         std::cout<< "El tamaño del archivo es : "<<results.st_size <<" bytes" <<std::endl;                              //Imprime el tamano del archivo
+        return results.st_size;}
 
     else{
         std::cout<< "No se pudo determinar el tamano del archivo" <<std::endl;
+        return 0;
     }
 }
 

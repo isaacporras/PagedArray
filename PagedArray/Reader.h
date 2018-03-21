@@ -36,7 +36,7 @@ public:
     /**
      * @brief da el tamano real del archivo, no de lo que contiene en numeros binarios. NO SE USA
      */
-    void getSize();
+    long getSize();
 };
 
 

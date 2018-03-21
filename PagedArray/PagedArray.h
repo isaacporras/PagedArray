@@ -16,8 +16,9 @@ public:
     int MAX_INDEX;
 
     PagedArray();
-    int* operator[](int);
+    int& operator[](int);
     void printTodasLasPaginas();
+    long getSize();
 };
 
 

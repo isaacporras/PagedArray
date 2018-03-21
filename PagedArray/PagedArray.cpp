@@ -15,7 +15,7 @@ PagedArray::PagedArray() {
     MAX_INDEX = 1000;
 }
 
-int* PagedArray::operator[](int index) {
+int& PagedArray::operator[](int index) {
     int requestedIndex = (index % 100);
     int requestedPageNumber = (int) ceil(index/100) + 1;
     struct Pagina* requestedPage = virtualMemory.cargarpagina(index);
@@ -28,11 +28,22 @@ int* PagedArray::operator[](int index) {
             requestedPage = &virtualMemory.todaslaspaginas[i];
         }
     }
-    int* requestedValue = &requestedPage -> elementos[requestedIndex];
-    std::cout << "Puntero: " << requestedValue << std::endl;
-    std::cout << "Valor de puntero: " << *requestedValue << std::endl;
-    return requestedValue;
+    //int* requestedValue = &requestedPage -> elementos[requestedIndex];
+//    std::cout << "Puntero: " << requestedValue << std::endl;
+//    std::cout << "Valor de puntero: " << *requestedValue << std::endl;
+    return requestedPage->elementos[requestedIndex];;
 }
+
+/*
+ * PARA TENER EL TAMANO EN BYTES DEL ARRAY Y ASI PODER USARLO EN QUICKSORT COMO LEFT
+ */
+long PagedArray::getSize(){
+    Reader reader;
+    reader.readFile();
+    long size = reader.getSize();
+    return size;
+}
+
 
 void PagedArray::printTodasLasPaginas(){
     for(int x = 0; x < 4; x++) {
