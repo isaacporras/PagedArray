@@ -13,6 +13,7 @@ using std::string;
 class PagedArray {
 public:
     Memory virtualMemory;
+    int MAX_INDEX;
 
     PagedArray();
     int operator[](int);

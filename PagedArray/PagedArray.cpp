@@ -12,34 +12,31 @@
 PagedArray::PagedArray() {
     Reader reader;
     reader.writeFile();
-    /* virtualMemory.cargarpagina(1);
-     virtualMemory.cargarpagina(101);
-    virtualMemory.cargarpagina(201);
-    virtualMemory.cargarpagina(301);
-      virtualMemory.cargarpagina(401);*/
+    MAX_INDEX = 1000;
 }
 
 int PagedArray::operator[](int index) {
-    std::cout << "Entrando a operador sobreescrito index: " << index << std::endl;
+    if(index >= MAX_INDEX){
+        return 666666;
+    }
+
     int requestedIndex = (index % 100);
-    std::cout << "requestedIndex: " << requestedIndex <<std::endl;
-
-
-    struct Pagina* requestedPage = virtualMemory.cargarpagina(index);
-    //std::cout << "requestedPage: " << *(requestedPage->numerodepagina) <<std::endl;
-    //std::cout << "a punto de regresar elemento " << requestedPage -> elementos[requestedIndex] <<std::endl;
-    //int requestedValue = requestedPage -> elementos[requestedIndex];
-
-
     int requestedPageNumber = (int) ceil(index/100) + 1;
-    std::cout << "------ Página solicitada: " << requestedPageNumber << " -------" << std::endl;
+    struct Pagina* requestedPage = virtualMemory.cargarpagina(index);
+    /*if(requestedIndex == 0){
+        requestedPageNumber += 1;
 
-    for(int i = 0; i < 4; i++){
+    }*/
+
+    std::cout << "el indice que voy a pedir: " << requestedIndex << " de la pagina: " << requestedPageNumber <<std::endl;
+
+
+    for(int i = 0; i < 4; ++i){
         if(*virtualMemory.todaslaspaginas[i].numerodepagina == requestedPageNumber){
             requestedPage = &virtualMemory.todaslaspaginas[i];
         }
     }
-    int requestedValue = requestedPage -> elementos[requestedIndex -1];
+    int requestedValue = requestedPage -> elementos[requestedIndex];
     return requestedValue;
 }
 

@@ -8,7 +8,6 @@ using namespace std;
 #include <sys/stat.h>
 #include "Reader.h"
 
-
 Reader::Reader() {
 
 }

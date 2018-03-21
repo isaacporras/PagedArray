@@ -170,9 +170,8 @@ Pagina* Memory::cargarpagina(int posicion_numero) {                             
     else{
         numero_de_pagina = int(numero_de_pagina);
     }
-
-
-
+    if(posicion_numero%100 == 0)
+        numero_de_pagina += 1;
     std::cout << "El numero de pagina es: " << numero_de_pagina<< std::endl;
 
 
