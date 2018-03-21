@@ -15,18 +15,10 @@ PagedArray::PagedArray() {
     MAX_INDEX = 1000;
 }
 
-int PagedArray::operator[](int index) {
-    if(index >= MAX_INDEX){
-        return 666666;
-    }
-
+int* PagedArray::operator[](int index) {
     int requestedIndex = (index % 100);
     int requestedPageNumber = (int) ceil(index/100) + 1;
     struct Pagina* requestedPage = virtualMemory.cargarpagina(index);
-    /*if(requestedIndex == 0){
-        requestedPageNumber += 1;
-
-    }*/
 
     std::cout << "el indice que voy a pedir: " << requestedIndex << " de la pagina: " << requestedPageNumber <<std::endl;
 
@@ -36,7 +28,9 @@ int PagedArray::operator[](int index) {
             requestedPage = &virtualMemory.todaslaspaginas[i];
         }
     }
-    int requestedValue = requestedPage -> elementos[requestedIndex];
+    int* requestedValue = &requestedPage -> elementos[requestedIndex];
+    std::cout << "Puntero: " << requestedValue << std::endl;
+    std::cout << "Valor de puntero: " << *requestedValue << std::endl;
     return requestedValue;
 }
 
