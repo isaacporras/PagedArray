@@ -68,9 +68,6 @@ int main() {
     } else if (input == "IS") {
         Sorting::insertionSort(&array, fl);
         array.printTodasLasPaginas();
-    } else if (input == "SS") {
-        Sorting::selectionSort(&array, fl);
-        array.printTodasLasPaginas();
     } else {
         cout << "input not valid, type QS, IS, SS" << endl;
     }

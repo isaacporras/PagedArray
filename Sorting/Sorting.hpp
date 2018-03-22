@@ -15,8 +15,6 @@ public:
     static void quickSort(PagedArray *arr, int left, int right);
 
     static void insertionSort(PagedArray *arr, int length);
-
-    static void selectionSort(PagedArray *arr, int n);
 };
 
 
